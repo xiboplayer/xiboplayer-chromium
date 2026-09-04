@@ -60,7 +60,7 @@ jobs:
       package-name: xiboplayer-chromium
       rpm-spec: 'xiboplayer-chromium.spec'
       rpm-script: 'build-rpm.sh'
-      fedora-matrix: '["43"]'
+      fedora-matrix: '["43", "44"]'
       # Package is BuildArch: noarch — one build produces a .noarch.rpm
       # that works on any architecture. Building on both x86_64 and aarch64
       # produces two artifacts with the same filename; download-artifact's
