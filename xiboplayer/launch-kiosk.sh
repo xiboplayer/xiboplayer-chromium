@@ -48,7 +48,9 @@ fi
 cfg_read() {
     local varname="$1" key="$2" file="$3"
     local val
-    val=$(jq -r ".$key // empty" "$file" 2>/dev/null) || true
+    # `// empty` treats an explicit false (and null) as absent, so a documented opt-out such
+    # as "relaxSslCerts": false could never turn a default of true off. Read presence, not truth.
+    val=$(jq -r --arg k "$key" 'if has($k) and .[$k] != null then .[$k] else empty end' "$file" 2>/dev/null) || true
     [[ -n "$val" ]] && printf -v "$varname" '%s' "$val" || true
 }
 
