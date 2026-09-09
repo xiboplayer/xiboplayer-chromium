@@ -16,7 +16,7 @@
     "@xiboplayer/stats": "0.7.22",
     "@xiboplayer/sw": "0.7.22",
     "@xiboplayer/sync": "0.7.22",
-    "@xiboplayer/utils": "0.7.22",
+    "@xiboplayer/utils": "0.7.23",
     "@xiboplayer/xmds": "0.7.22",
     "@xiboplayer/xmr": "0.7.22",
     "html2canvas": "latest",
