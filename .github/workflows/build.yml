@@ -55,7 +55,7 @@ jobs:
   rpm:
     needs: [test, wait-for-pwa]
     if: always() && needs.test.result == 'success' && (needs.wait-for-pwa.result == 'success' || needs.wait-for-pwa.result == 'skipped')
-    uses: xiboplayer/.github/.github/workflows/build-rpm.yml@9af382cf12830bca426a1a99e4b59532ee72a711  # main
+    uses: xiboplayer/.github/.github/workflows/build-rpm.yml@e8649f4861f729365d7f15c9f5715f5df64dc2c7  # main
     with:
       package-name: xiboplayer-chromium
       rpm-spec: 'xiboplayer-chromium.spec'
