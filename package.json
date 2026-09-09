@@ -7,7 +7,7 @@
     "dist"
   ],
   "dependencies": {
-    "@xiboplayer/cache": "0.7.22",
+    "@xiboplayer/cache": "0.7.23",
     "@xiboplayer/core": "0.7.22",
     "@xiboplayer/crypto": "0.7.22",
     "@xiboplayer/renderer": "0.7.22",
