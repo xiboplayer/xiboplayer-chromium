@@ -8,7 +8,7 @@
   ],
   "dependencies": {
     "@xiboplayer/cache": "0.7.22",
-    "@xiboplayer/core": "0.7.22",
+    "@xiboplayer/core": "0.7.23",
     "@xiboplayer/crypto": "0.7.22",
     "@xiboplayer/renderer": "0.7.22",
     "@xiboplayer/schedule": "0.7.22",
