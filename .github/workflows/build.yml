@@ -55,12 +55,12 @@ jobs:
   rpm:
     needs: [test, wait-for-pwa]
     if: always() && needs.test.result == 'success' && (needs.wait-for-pwa.result == 'success' || needs.wait-for-pwa.result == 'skipped')
-    uses: xiboplayer/.github/.github/workflows/build-rpm.yml@9af382cf12830bca426a1a99e4b59532ee72a711  # main
+    uses: xiboplayer/.github/.github/workflows/build-rpm.yml@2f9f0f369ade9accb7afb1577a61d5a38e2883fc  # main
     with:
       package-name: xiboplayer-chromium
       rpm-spec: 'xiboplayer-chromium.spec'
       rpm-script: 'build-rpm.sh'
-      fedora-matrix: '["43", "44"]'
+      fedora-matrix: '["44", "45"]'
       # Package is BuildArch: noarch — one build produces a .noarch.rpm
       # that works on any architecture. Building on both x86_64 and aarch64
       # produces two artifacts with the same filename; download-artifact's
